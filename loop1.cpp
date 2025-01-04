@@ -81,23 +81,49 @@ int main()
     //     cout << endl;
     // }
 
+    // int n;
+    // cout << "Enter Number: ";
+    // cin >> n;
+    // cout << "Reverse Hollow Half Pyramid Pattern" << endl
+    //      << "\n";
+    // for (int i = 1; i <= n; i++)
+    // {
+    //     for (int j = 1; j <= n - i + 1; j++)
+    //     {
+    //         if (i == 1 || j == 1 || j == n - i + 1 || j == 4 || j == 5)
+    //         {
+    //             cout << "* ";
+    //         }
+    //         else
+    //         {
+
+    //             cout << "  ";
+    //         }
+    //     }
+    //     cout << endl;
+    // }
+
+    //     *
+    //    * *
+    //   * * *
+    //  * * * *
+    // * * * * *
+    //* * * * * *
+
     int n;
     cout << "Enter Number: ";
     cin >> n;
-    cout << "Reverse Hollow Half Pyramid Pattern" << endl
-         << "\n";
     for (int i = 1; i <= n; i++)
     {
-        for (int j = 1; j <= n - i + 1; j++)
+        for (int j = 1; j <= n; j++)
         {
-            if (i == 1 || j == 1 || j == n - i + 1 || j == 4 || j == 5)
+            if (j <= n - i)
             {
-                cout << "* ";
+                cout << " ";
             }
             else
             {
-
-                cout << "  ";
+                cout << "* ";
             }
         }
         cout << endl;
